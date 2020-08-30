@@ -1,11 +1,12 @@
 const path = require('path');
 const fs = require('fs');
 
-const dirPath = path.join(__dirname, '../src/content');
+const dirPathPosts = path.join(__dirname, '../src/content/blogs');
 let postLists = [];
 
+// FIXME: files must be inside foldres unless an error occurs.
 const getPosts = () => {
-  fs.readdir(dirPath, (err, files) => {
+  fs.readdir(dirPathPosts, (err, files) => {
     if (err) {
       return console.log('filed to load contents of directory.' + err);
     }
@@ -13,7 +14,7 @@ const getPosts = () => {
     files.forEach((file, index) => {
       let obj = {};
       let post;
-      fs.readFile(`${dirPath}/${file}`, 'utf8', (err, contents) => {
+      fs.readFile(`${dirPathPosts}/${file}`, 'utf8', (err, contents) => {
         const getMetaDataIndicies = (acc, element, index) => {
           if (/^---/.test(element)) {
             acc.push(index);
@@ -64,3 +65,35 @@ const getPosts = () => {
 };
 
 getPosts();
+
+// FIXME: Getting static pages... At the moment I don't where should I put this piece of code.
+
+const dirPathPages = path.join(__dirname, '../src/content/statics');
+let pageLists = [];
+
+const getPages = () => {
+  fs.readdir(dirPathPages, (err, files) => {
+    if (err) {
+      return console.log('filed to load contents of directory.' + err);
+    }
+    // console.log(files);
+    files.forEach((file, index) => {
+      let page;
+      fs.readFile(`${dirPathPages}/${file}`, 'utf8', (err, contents) => {
+        page = {
+          content: contents,
+        };
+        pageLists.push(page);
+        console.log(pageLists.length);
+        if (pageLists.length === files.length) {
+          console.log('Generating files...');
+          let data = JSON.stringify(pageLists);
+          fs.writeFileSync('src/pages.json', data);
+        }
+      });
+    });
+  });
+  return;
+};
+
+getPages();

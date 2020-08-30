@@ -1,0 +1,20 @@
+h1 {
+  font-weight: 800;
+}
+
+.layout {
+  min-height: 100vh;
+}
+
+.header {
+  background-color: navy;
+  color: lightblue;
+  padding: 1rem;
+  font-family: 'Playfair Display';
+}
+
+.post__list {
+  width: 40%;
+  margin: auto;
+  text-align: center;
+}
