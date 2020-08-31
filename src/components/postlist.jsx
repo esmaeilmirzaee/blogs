@@ -1,6 +1,7 @@
 import React from 'react';
 import postlist from '../posts.json';
 import Markdown from 'react-markdown';
+import { Link } from 'react-router-dom';
 
 const PostList = () => {
   const excerpt = postlist.map((post) => {
@@ -13,14 +14,18 @@ const PostList = () => {
         postlist.map((post, index) => {
           return (
             <div className='post__card' key={index}>
-              <h2>{post.title}</h2>
+              <h2>
+                <Link to={`/post/${post.id}`}>{post.title}</Link>
+              </h2>
               <small>
                 Published on <span>{post.author}</span> by{' '}
                 <span>{post.author}</span>.
               </small>
               <hr />
               <Markdown source={excerpt[index]} escapeHtml={false} />
-              <small>Read More...</small>
+              <small>
+                <Link to={`/post/${post.id}`}>Read More...</Link>
+              </small>
             </div>
           );
         })}
