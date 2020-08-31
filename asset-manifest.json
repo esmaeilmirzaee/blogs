@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/markdown-blog/static/css/main.bf8931f4.chunk.css",
+    "main.js": "/markdown-blog/static/js/main.6f7cf1f9.chunk.js",
+    "main.js.map": "/markdown-blog/static/js/main.6f7cf1f9.chunk.js.map",
+    "runtime-main.js": "/markdown-blog/static/js/runtime-main.ee50a9a1.js",
+    "runtime-main.js.map": "/markdown-blog/static/js/runtime-main.ee50a9a1.js.map",
+    "static/css/2.a21d54f3.chunk.css": "/markdown-blog/static/css/2.a21d54f3.chunk.css",
+    "static/js/2.4661f550.chunk.js": "/markdown-blog/static/js/2.4661f550.chunk.js",
+    "static/js/2.4661f550.chunk.js.map": "/markdown-blog/static/js/2.4661f550.chunk.js.map",
+    "index.html": "/markdown-blog/index.html",
+    "precache-manifest.b0f62f600592092c906cc538671487c8.js": "/markdown-blog/precache-manifest.b0f62f600592092c906cc538671487c8.js",
+    "service-worker.js": "/markdown-blog/service-worker.js",
+    "static/css/2.a21d54f3.chunk.css.map": "/markdown-blog/static/css/2.a21d54f3.chunk.css.map",
+    "static/css/main.bf8931f4.chunk.css.map": "/markdown-blog/static/css/main.bf8931f4.chunk.css.map",
+    "static/js/2.4661f550.chunk.js.LICENSE.txt": "/markdown-blog/static/js/2.4661f550.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/markdown-blog/static/media/raleway-latin-900italic.c1c43520.woff2"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ee50a9a1.js",
+    "static/css/2.a21d54f3.chunk.css",
+    "static/js/2.4661f550.chunk.js",
+    "static/css/main.bf8931f4.chunk.css",
+    "static/js/main.6f7cf1f9.chunk.js"
+  ]
+}
