@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "53ec3eae3a9e1987319a982f1f765175",
+    "revision": "80965744331ad78219ec796e8feb4411",
     "url": "/markdown-blog/index.html"
   },
   {
-    "revision": "8d90b9da754f1b8eb848",
+    "revision": "066c49e05cb56c7d6cf4",
     "url": "/markdown-blog/static/css/2.a21d54f3.chunk.css"
   },
   {
-    "revision": "b00f4d34844cb50755fd",
+    "revision": "b4ee23c7e7c6d123db30",
     "url": "/markdown-blog/static/css/main.bf8931f4.chunk.css"
   },
   {
-    "revision": "8d90b9da754f1b8eb848",
-    "url": "/markdown-blog/static/js/2.4661f550.chunk.js"
+    "revision": "066c49e05cb56c7d6cf4",
+    "url": "/markdown-blog/static/js/2.2ec855d7.chunk.js"
   },
   {
     "revision": "40046c021c0025c71b5ec67323b92a85",
-    "url": "/markdown-blog/static/js/2.4661f550.chunk.js.LICENSE.txt"
+    "url": "/markdown-blog/static/js/2.2ec855d7.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b00f4d34844cb50755fd",
-    "url": "/markdown-blog/static/js/main.6f7cf1f9.chunk.js"
+    "revision": "b4ee23c7e7c6d123db30",
+    "url": "/markdown-blog/static/js/main.e46f6a33.chunk.js"
   },
   {
     "revision": "1af682c3cfd0a78c16b9",
